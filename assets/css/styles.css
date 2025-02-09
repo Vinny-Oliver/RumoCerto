@@ -1,0 +1,121 @@
+/* Reset de estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte futurista e fundo escuro */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fonte com estilo sci-fi */
+    background-color: #0a0a0a; /* Fundo preto */
+    color: #00eaff; /* Texto azul-ciano neon */
+}
+
+/* Estilizando a Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-bottom: 2px solid #00eaff;
+}
+
+.navbar-brand {
+    color: #00eaff;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #00eaff; /* Efeito neon */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff99 !important;
+    text-shadow: 0px 0px 10px #00ff99;
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 0px 0px 15px #00eaff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Botões com efeito futurista */
+.btn-futurista {
+    background: linear-gradient(45deg, #00eaff, #00ff99);
+    color: #000;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    box-shadow: 0px 0px 15px #00eaff;
+}
+
+.btn-futurista:hover {
+    background: linear-gradient(45deg, #00ff99, #00eaff);
+    box-shadow: 0px 0px 20px #00ff99;
+    transform: scale(1.05);
+}
+
+/* Seção Destinos com efeito neon */
+.destinos {
+    background: linear-gradient(135deg, #110f0f, #1a1a2e);
+    padding: 60px 0;
+    color: #fff;
+}
+
+/* Cards com efeito neon */
+.card {
+    
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px #00eaff;
+    transform: scale(1.05);
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Rodapé futurista */
+footer {
+    background-color: #000428;
+    color: #00eaff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #00eaff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
