@@ -94,7 +94,7 @@ CREATE TABLE Reservas (
 
 ## 5. Versionamento de Código (Opcional)
 
-- **Repositório no GitHub**: [Link do Repositório](#)
+- **Repositório no GitHub**: [https://github.com/Vinny-Oliver/RumoCerto](#)
 - **Commits organizados** conforme as etapas do desenvolvimento.
 
 ## 6. Entrega
@@ -104,5 +104,5 @@ CREATE TABLE Reservas (
 
 ## 7. Considerações Finais
 
-Esta primeira etapa foca na estruturação inicial do projeto. A próxima fase poderá incluir funcionalidades dinâmicas, como cadastro e reservas online.
+Esta primeira etapa da estruturação inicial do projeto. A próxima fase poderá incluir funcionalidades dinâmicas, como cadastro e reservas online.
 
