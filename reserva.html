@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - RumoCerto</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">RumoCerto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="reserva.html">Reservas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <h2 class="text-center">Faça sua Reserva</h2>
+        <form action="#" method="post" class="mt-4">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            </div>
+            <div class="mb-3">
+                <label for="pacote" class="form-label">Selecione o Pacote</label>
+                <select class="form-control" id="pacote" name="pacote" required>
+                    <option value="">Escolha um Pacote</option>
+                    <option value="1">Pacote para Paris</option>
+                    <option value="2">Pacote para Rio de Janeiro</option>
+                    <option value="3">Pacote para Jerusalém</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data da Viagem</label>
+                <input type="date" class="form-control" id="data" name="data" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Reservar</button>
+        </form>
+    </main>
+    
+    <footer class="text-center mt-5 py-3 bg-light">
+        <p>&copy; 2024 RumoCerto. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

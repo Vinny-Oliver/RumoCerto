@@ -1,41 +1,41 @@
-# Documentação do Projeto - RumoCerto
+```markdown
+# RumoCerto - Agência de Viagens
 
-## 1. Introdução
+## Descrição
 
-Este documento tem como objetivo descrever a estrutura e os requisitos do projeto "RumoCerto", uma agência de viagens. O projeto envolve a criação de uma interface inicial para apresentação visual e a modelagem do banco de dados, servindo como base para futuras funcionalidades.
+O projeto **RumoCerto** é uma agência de viagens que tem como objetivo fornecer informações sobre pacotes turísticos e permitir que os clientes realizem reservas online. A primeira fase do projeto inclui a criação da interface visual e a modelagem do banco de dados para futuras funcionalidades.
 
-## 2. Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5**: Estruturação do site.
 - **CSS3**: Estilização e personalização.
-- **Bootstrap (Opcional)**: Design responsivo e moderno.
+- **Bootstrap** (Opcional): Design responsivo e moderno.
 - **Git/GitHub**: Versionamento do código.
-- **BRModelo**: Modelagem do banco de dados.
 - **MySQL**: Banco de dados.
+- **BRModelo**: Modelagem do banco de dados.
 
-## 3. Estrutura do Projeto
+## Estrutura do Projeto
 
-### 3.1. Interface Visual
+### Interface Visual
 
-A interface do site foi estruturada com:
+A interface do site é composta por quatro páginas principais:
 
-- **Index**: Apresentação da agência e destinos populares.
-- **Destinos**: Locais de viagem.
-- **Pacotes**: Valores.
-- **Contato**: Formulário de contato.
+- **index.html**: Apresentação da agência e destinos populares.
+- **pacotes.html**: Exibição de pacotes turísticos e seus preços.
+- **reservas.html**: Página para o cliente selecionar pacotes e realizar a reserva.
+- **contato.html**: Formulário de contato para os clientes.
 
-### 3.2. Estrutura de Arquivos
+### Estrutura de Arquivos
 
-```
+```bash
 rumocerto/
 ├── index.html
-├── destinos.html
 ├── pacotes.html
+├── reservas.html
 ├── contato.html
 ├── assets/
 │   ├── css/
 │   │   ├── styles.css
-│   │   ├── destinos.css    
 │   ├── img/
 │   │   ├── jerusalem.png
 │   │   ├── paris.jpg
@@ -48,38 +48,30 @@ rumocerto/
 │   ├── logic_model_brmw.pdf
 ```
 
-## 4. Modelagem do Banco de Dados
+## Modelagem do Banco de Dados
 
-### 4.1. Diagrama Conceitual
+### Diagrama Conceitual
 
-- **Clientes** (id_cliente, nome, email, telefone)
-- **Destinos** (id_destino, nome, descrição, imagem)
-- **Reservas** (id_reserva, id_cliente, id_pacote, data_reserva)
-- **Pacotes** (id_pacote, id_destino, nome_pacote, preço)
+As tabelas do banco de dados foram modeladas da seguinte maneira:
 
-### 4.2. Script SQL
+- **Clientes**: Armazena as informações dos clientes.
+- **Pacotes**: Contém dados sobre os pacotes turísticos e seus preços.
+- **Reservas**: Registra as reservas feitas pelos clientes para os pacotes.
+
+### Script SQL
 
 ```sql
-CREATE TABLE Destinos (
-  id_destino INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL,
-  descricao TEXT,
-  imagem VARCHAR(255)
-);
-
-CREATE TABLE Pacotes (
-  id_pacote INT AUTO_INCREMENT PRIMARY KEY,
-  id_destino INT,
-  nome_pacote VARCHAR(100),
-  preco DECIMAL(10, 2),
-  FOREIGN KEY (id_destino) REFERENCES Destinos(id_destino)
-);
-
 CREATE TABLE Clientes (
   id_cliente INT AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(100),
   email VARCHAR(100) UNIQUE,
   telefone VARCHAR(20)
+);
+
+CREATE TABLE Pacotes (
+  id_pacote INT AUTO_INCREMENT PRIMARY KEY,
+  nome_pacote VARCHAR(100),
+  preco DECIMAL(10, 2)
 );
 
 CREATE TABLE Reservas (
@@ -92,17 +84,22 @@ CREATE TABLE Reservas (
 );
 ```
 
-## 5. Versionamento de Código (Opcional)
+## Versionamento de Código
 
-- **Repositório no GitHub**: [https://github.com/Vinny-Oliver/RumoCerto](#)
+- **Repositório no GitHub**: [RumoCerto GitHub](https://github.com/Vinny-Oliver/RumoCerto)
 - **Commits organizados** conforme as etapas do desenvolvimento.
 
-## 6. Entrega
+## Entrega
 
-- **Código Fonte**: Enviado em arquivo compactado ou via GitHub.
-- **Vídeo**: Demonstração do projeto (Google Drive, YouTube, etc.).
+- **Código Fonte**: O código pode ser encontrado no repositório GitHub.
+- **Vídeo**: Demonstração do projeto disponível no Google Drive ou YouTube (a ser disponibilizado).
 
-## 7. Considerações Finais
+## Próximos Passos
 
-Esta primeira etapa da estruturação inicial do projeto. A próxima fase poderá incluir funcionalidades dinâmicas, como cadastro e reservas online.
+- Implementar funcionalidades dinâmicas, como cadastro de clientes e reservas online.
+- Continuar aprimorando a interface com o uso do **Bootstrap** para garantir responsividade em dispositivos móveis.
+- Testar e ajustar a interação do formulário de reservas com o banco de dados.
 
+## Considerações Finais
+
+Este projeto é uma base inicial para o sistema de reservas de uma agência de viagens. A próxima fase pode incluir a implementação de funcionalidades dinâmicas para a reserva online de pacotes, bem como a integração de mais recursos para uma experiência mais completa.
