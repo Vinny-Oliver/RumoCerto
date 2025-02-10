@@ -144,3 +144,68 @@ footer {
     }
 }
 
+/* Footer - Estilo Futurista */
+.footer {
+    background: linear-gradient(135deg, #00eaff, #5c015c); /* Gradiente futurista */
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.footer h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #00eaff;
+    letter-spacing: 1px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #00eaff;
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.footer .social-icon {
+    color: #fff;
+    font-size: 25px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: #00eaff;
+    transform: scale(1.1);
+}
+
+/* Design Responsivo */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer h5 {
+        font-size: 18px;
+    }
+
+    .footer ul {
+        padding-left: 0;
+    }
+
+    .footer ul li {
+        margin-bottom: 10px;
+    }
+}
+
