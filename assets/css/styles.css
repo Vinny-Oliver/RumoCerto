@@ -10,6 +10,7 @@ body {
     font-family: 'Orbitron', sans-serif; /* Fonte com estilo sci-fi */
     background-color: #0a0a0a; /* Fundo preto */
     color: #00eaff; /* Texto azul-ciano neon */
+    line-height: 1.6;
 }
 
 /* Estilizando a Navbar */
@@ -80,7 +81,6 @@ body {
 
 /* Cards com efeito neon */
 .card {
-    
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -90,6 +90,7 @@ body {
 .card:hover {
     box-shadow: 0px 0px 20px #00eaff;
     transform: scale(1.05);
+    will-change: transform;
 }
 
 /* Seção Sobre Nós */

@@ -1,0 +1,146 @@
+/* Garantir que o fundo de toda a página seja escuro */
+html, body {
+    height: 100%;
+    background-color: rgb(25, 25, 25); /* Cor escura de fundo */
+    color: #00eaff; /* Texto em azul-ciano */
+    margin: 0;
+    padding: 0;
+}
+
+/* Aplicar fundo escuro em header, main e footer */
+header, footer, main {
+    background-color: rgb(25, 25, 25); /* Fundo escuro */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 2px solid #00eaff;
+}
+
+/* Formulário */
+form {
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #00eaff;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(15, 15, 15); /* Cor escura para o rodapé */
+    color: #00eaff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #00eaff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-control {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Navbar Futurista */
+.navbar {
+    background: linear-gradient(135deg, #00eaff, #5c015c); /* Gradiente futurista */
+    border-radius: 0 0 20px 20px;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.5s ease;
+}
+
+/* Estilo do link */
+.navbar-brand {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Brilho futurista */
+    transition: text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 1);
+}
+
+/* Links da Navbar */
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    position: relative;
+    transition: color 0.4s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00eaff; /* Cor futurista no hover */
+    transform: scale(1.1); /* Efeito de aumento */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Efeito de sublinhado futurista */
+.navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #00eaff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* Navbar Toggler (responsivo) */
+.navbar-toggler {
+    border-color: #00eaff;
+}
+
+.navbar-toggler-icon {
+    background-color: #00eaff;
+}
+
+/* Ajustes para links ativos */
+.navbar-nav .nav-item.active .nav-link {
+    color: #00eaff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00eaff; /* Efeito de brilho na opção ativa */
+}
+
+/* Ajustes quando a página rola */
+.navbar-scrolled {
+    background: linear-gradient(135deg, #00eaff, #00ff99); /* Alteração de cor ao rolar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+}
+

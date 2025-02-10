@@ -9,23 +9,23 @@
     <title>Contato - RumoCerto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/reserva.css"
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">RumoCerto</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html">RumoCerto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="/index.html">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/pacotes.html">Pacotes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/reserva.html">reservas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/contato.html">Contato</a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="reserva.html">Reservas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,29 +41,29 @@
                 <form>
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
                     </div>
                     <div class="mb-3">
                         <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"
-                            required></textarea>
+                        <textarea class="form-control" id="mensagem" rows="4" name="mensagem" placeholder="Sua mensagem" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6"> <br><br>
                 <h3>Informações de Contato</h3>
-                <p><strong>Endereço:</strong> Rua das Viagens, 123 - São Paulo, SP</p>
-                <p><strong>Telefone:</strong> (11) 98765-4321</p>
-                <p><strong>E-mail:</strong> contato@rumocerto.com</p>
+                <p><strong>Endereço:</strong> Deus Acima de Tudo, 100000000000000000 - Rio de Janeiro, RJ</p>
+                <p><strong>Telefone:</strong> (21) 99301-7419</p>
+                <p><strong>E-mail:</strong> vinicius.bernardes.oliver@gmail.com</p>
                 <p>Siga-nos nas redes sociais:</p>
-                <a href="#" class="me-2">Facebook</a>
-                <a href="#" class="me-2">Instagram</a>
-                <a href="#">Twitter</a>
+                <a href="#" class="me-2" aria-label="Facebook">Facebook</a>
+                <a href="#" class="me-2" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+
             </div>
         </div>
     </main>
